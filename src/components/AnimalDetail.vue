@@ -8,7 +8,7 @@
     />
     <p>{{ animal.description }}</p>
     <router-link to="/animals" class="btn btn-primary"
-      >Back to Animals List</router-link 
+      >Back to Animals List</router-link
     >
   </div>
 </template>
