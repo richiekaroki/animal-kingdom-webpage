@@ -50,7 +50,7 @@ export default {
     },
     async fetchAnimalImage(name) {
       const response = await fetch(
-        `https://api.unsplash.com/search/photos?query=${name}&client_id=YOUR_UNSPLASH_ACCESS_KEY`
+        `https://api.unsplash.com/search/photos?query=${name}&client_id=Sc4pjbkYKYIW0Kb84jJCNXyakIkkaiQ1c2DaGqTRzAA`
       );
       const data = await response.json();
       return data.results[0]?.urls?.small || "https://via.placeholder.com/150";
