@@ -15,21 +15,25 @@
     </p>
   </div>
 </template>
+
 <script>
 export default {
   name: "AboutUs",
 };
 </script>
+
 <style>
 .container {
   max-width: 960px;
   text-align: center;
 }
+
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #333;
 }
+
 p {
   font-size: 1.2rem;
   line-height: 1.6;
