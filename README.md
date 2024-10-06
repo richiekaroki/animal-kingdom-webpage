@@ -2,7 +2,9 @@
 
 ## Project setup
 ```
-npm install
+npm install -g @vue/cli@latest
+npm install bootstrap
+npm install @popperjs/core
 ```
 
 ### Compiles and hot-reloads for development
