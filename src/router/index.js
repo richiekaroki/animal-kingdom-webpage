@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
-import About from "../components/AboutUs.vue";
+import AboutUs from "../components/AboutUs.vue";
 import Home from "../components/AnimalCard.vue";
 import AnimalDetail from "../components/AnimalDetail.vue";
 import AnimalList from "../components/AnimalList.vue";
-import Contact from "../components/ContactUs.vue";
+import ContactUs from "../components/ContactUs.vue";
 
 const routes = [
   {
@@ -14,7 +14,7 @@ const routes = [
   {
     path: "/about",
     name: "AboutUs",
-    component: About,
+    component: AboutUs,
   },
   {
     path: "/animals",
@@ -30,7 +30,7 @@ const routes = [
   {
     path: "/contact",
     name: "ContactUs",
-    component: Contact,
+    component: ContactUs,
   },
 ];
 
