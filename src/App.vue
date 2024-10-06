@@ -35,7 +35,6 @@
         </div>
       </div>
     </nav>
-
     <!-- This is where routed components will be displayed -->
     <router-view></router-view>
   </div>
