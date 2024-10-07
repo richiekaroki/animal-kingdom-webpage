@@ -1,4 +1,4 @@
-# Animal Kingdom SPA
+# Animal Kingdom Webpage
 
 ## Overview
 
@@ -27,8 +27,8 @@ animal-kingdom/
 │ │ ├── AnimalList.vue # Animal List component (with links to detail pages)
 │ │ ├── AnimalDetail.vue # Individual Animal Detail component
 │ │ ├── AnimalCard.vue # Carousel component (for homepage)
-│ │ ├── About.vue # About Us page
-│ │ └── Contact.vue # Contact Us page (optional)
+│ │ ├── AboutUs.vue # About Us page
+│ │ └── ContactUs.vue # Contact Us page (optional)
 │ ├── router/
 │ │ └── index.js # Vue Router configuration (routes for the app)
 │ ├── App.vue # Main Vue component (layout)
@@ -43,7 +43,7 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/animal-kingdom-spa.git
+   git clone https://github.com/your-username/animal-kingdom-website.git
 
    ```
 
