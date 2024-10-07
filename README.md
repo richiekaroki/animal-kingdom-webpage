@@ -26,7 +26,7 @@ animal-kingdom/
 │ ├── components/
 │ │ ├── AnimalList.vue # Animal List component (with links to detail pages)
 │ │ ├── AnimalDetail.vue # Individual Animal Detail component
-│ │ ├── AnimalCard.vue # Carousel component (for homepage)
+│ │ ├── AnimalCarousel.vue # Carousel component (for homepage)
 │ │ ├── AboutUs.vue # About Us page
 │ │ └── ContactUs.vue # Contact Us page (optional)
 │ ├── router/
