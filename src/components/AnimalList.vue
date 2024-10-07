@@ -7,7 +7,7 @@
           <img :src="animal.imageUrl" class="card-img-top" :alt="animal.name" />
           <div class="card-body">
             <h5 class="card-title">{{ animal.name }}</h5>
-            <p class="card-text">{{ animal.description }}</p>
+            <p class="card-text">{{ animal.habitat }}</p>
             <!-- Link to individual animal page -->
             <router-link :to="`/animals/${animal.name}`" class="btn btn-primary"
               >Learn More</router-link
@@ -32,16 +32,24 @@ export default {
   },
   methods: {
     async fetchAnimals() {
-      const animalNames = ["Lion", "Tiger", "Elephant"]; // Example animals
+      const animalNames = [
+        "Lion",
+        "Tiger",
+        "Elephant",
+        "Giraffe",
+        "Warthog",
+        "Zebra",
+        "Monkey",
+      ]; // Example animals
       let fetchedAnimals = [];
 
       for (const name of animalNames) {
-        const description = await this.fetchAnimalDescription(name);
+        const habitat = await this.fetchAnimalHabitat(name);
         const imageUrl = await this.fetchAnimalImage(name);
 
         fetchedAnimals.push({
           name,
-          description,
+          habitat,
           imageUrl,
         });
       }
@@ -49,17 +57,15 @@ export default {
       this.animals = fetchedAnimals;
       this.loading = false;
     },
-    async fetchAnimalDescription(name) {
+    async fetchAnimalHabitat(name) {
       const response = await fetch(
         `https://api.api-ninjas.com/v1/animals?name=${name}`,
         {
-          headers: { "X-Api-Key": "VxVW3niCm1WjncTJFe23JQ==OcBrzgjxSEBeby04" },
+          headers: { "X-Api-Key": "XUrkiZ8CqgXO0McvqPMpmXWnE6RixqZYWidyofow" },
         }
       );
       const data = await response.json();
-      return (
-        data[0]?.characteristics?.description || "Description not available"
-      );
+      return data[0]?.characteristics?.habitat || "Habitat not available";
     },
     async fetchAnimalImage(name) {
       const response = await fetch(
