@@ -6,7 +6,7 @@
 
 ### Features
 
-- **Home Page**: Features a carousel of animal images.
+- **Home Page**: Features a cards of animal images.
 - **Animals List**: Displays a list of animals with descriptions and images. Clicking on "Learn More" navigates to an individual animal's detail page.
 - **Individual Animal Pages**: Each animal has its own dedicated page with more detailed information.
 - **About Us**: Provides information about the project and its goals.
@@ -26,7 +26,7 @@ animal-kingdom/
 │ ├── components/
 │ │ ├── AnimalList.vue # Animal List component (with links to detail pages)
 │ │ ├── AnimalDetail.vue # Individual Animal Detail component
-│ │ ├── Carousel.vue # Carousel component (for homepage)
+│ │ ├── AnimalCard.vue # Carousel component (for homepage)
 │ │ ├── About.vue # About Us page
 │ │ └── Contact.vue # Contact Us page (optional)
 │ ├── router/
