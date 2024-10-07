@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AboutUs from "../components/AboutUs.vue";
-import Home from "../components/AnimalCard.vue";
+import Home from "../components/AnimalCarousel.vue";
 import AnimalDetail from "../components/AnimalDetail.vue";
 import AnimalList from "../components/AnimalList.vue";
 import ContactUs from "../components/ContactUs.vue";
