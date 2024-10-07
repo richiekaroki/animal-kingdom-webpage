@@ -27,26 +27,24 @@ export default {
   methods: {
     async fetchAnimalDetails() {
       const name = this.name; // The name comes from the URL
-      const description = await this.fetchAnimalDescription(name);
+      const habitat = await this.fetchAnimalHabitat(name);
       const imageUrl = await this.fetchAnimalImage(name);
 
       this.animal = {
         name,
-        description,
+        habitat,
         imageUrl,
       };
     },
-    async fetchAnimalDescription(name) {
+    async fetchAnimalHabitat(name) {
       const response = await fetch(
         `https://api.api-ninjas.com/v1/animals?name=${name}`,
         {
-          headers: { "X-Api-Key": "VxVW3niCm1WjncTJFe23JQ==OcBrzgjxSEBeby04" },
+          headers: { "X-Api-Key": "XUrkiZ8CqgXO0McvqPMpmXWnE6RixqZYWidyofow" },
         }
       );
       const data = await response.json();
-      return (
-        data[0]?.characteristics?.description || "Description not available"
-      );
+      return data[0]?.characteristics?.habitat || "Habitat not available";
     },
     async fetchAnimalImage(name) {
       const response = await fetch(
